@@ -26,7 +26,10 @@ def RNN(_status, _weights, _biases):
     _status = tf.reshape(_status, [-1,1,H])
     
     lstm_cell = tf.nn.rnn_cell.BasicLSTMCell(H, forget_bias=1.0, state_is_tuple=True)
-    
+    '''
+    If the version of your tensorflow is higher than r0.9, then your lstm_cell should try the following :
+    lstm_cell = tf.nn.rnn_cell.BasicLSTMCell(H, forget_bias=1.0, state_is_tuple=True)
+    '''
     _init_state = lstm_cell.zero_state(10, dtype=tf.float32)
     outputs, states = tf.nn.dynamic_rnn(lstm_cell, _status, initial_state=_init_state, time_major=False)
     
