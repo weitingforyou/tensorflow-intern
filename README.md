@@ -11,8 +11,9 @@ If the file name begins with "2330", it represents that the input data is the st
 * numpy
 * matplotlib
 * yahoo_finance (for downloading the stock price)
- <br>
- <br>
+<br>
+<br>
+
 ## file name begins with "check"
 The input data includes state, action and rewards.
 ### check.py
@@ -22,7 +23,8 @@ Simple Tensorflow code for LSTM(RNN) model.
 ### check_MultiRNNCell.py
 Simple Tensorflow code for MultiLayer LSTM model.
 <br>
-<br> 
+<br>
+
 ## file name begins with "2330"
 The input data is the 2330(TSMC)'s stock price.
 ### 2330_LSTM.py
