@@ -35,8 +35,8 @@ data_Y = np.ones((len(stock_data)-day_len,1), dtype = np.float)
 
 for i in xrange(0, len(data_X)):
     for j in xrange(0, day_len):
-        data_X[i,j] = float(stock_data[i+j].get('Close'))
-    data_Y[i,0] = float(stock_data[i+day_len].get('Close'))
+        data_X[i,j] = float(stock_data[i+j].get('Close')) - float(stock_data[i].get('Close'))
+    data_Y[i,0] = float(stock_data[i+day_len].get('Close')) - float(stock_data[i].get('Close'))
     
 len_train = int(len(data_X) * 0.8)
 len_test = len(data_X) - len_train
