@@ -15,11 +15,11 @@ If the file name begins with "2330", it represents that the input data is the st
 ## simple practice
 Files in folder "practice" is for practicing building the model. <br>
 The input data includes state, action and rewards.
-### check.py
+#### check.py
 Simple Tensorflow code for MLP model.
-### check_LSTM.py
+#### check_LSTM.py
 Simple Tensorflow code for LSTM(RNN) model.
-### check_MultiRNNCell.py
+#### check_MultiRNNCell.py
 Simple Tensorflow code for MultiLayer LSTM model.
 <br>
 <br>
@@ -27,7 +27,7 @@ Simple Tensorflow code for MultiLayer LSTM model.
 ## implementation
 Files in folder "stock" is for the implementation the various model. <br>
 The input data is the stock price of 2330(TSMC), 2412(Chunghwa Telecom Co.) etc.
-### 2330_LSTM.py
+#### 2330_LSTM.py
 The input data is the stock price of 2330(TSMC). <br>
 It can predict the 10th day's stock price with knowing the 1st~9th day's stock price. <br>
 This file is training and testing with LSTM(RNN) model.
