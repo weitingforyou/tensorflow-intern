@@ -1,8 +1,6 @@
 # tensorflow-intern
 4th grade tensorflow intern <br>
 There are two kinds of input data in this project. <br>
-If the file name begins with "check", it represents that the input data is set randomly. <br>
-In this kind of file, the input data includes state, action and rewards. <br>
 If the file name begins with "2330", it represents that the input data is the stock price of 2330(TSMC). <br>
 <br>
 <br>
@@ -14,7 +12,8 @@ If the file name begins with "2330", it represents that the input data is the st
 <br>
 <br>
 
-## file name begins with "check"
+## Folder practice
+Files in this folder is for practicing building the model. <br>
 The input data includes state, action and rewards.
 ### check.py
 Simple Tensorflow code for MLP model.
@@ -25,8 +24,9 @@ Simple Tensorflow code for MultiLayer LSTM model.
 <br>
 <br>
 
-## file name begins with "2330"
-The input data is the 2330(TSMC)'s stock price.
+## Folder stock
+Files in this folder is for the implementation the various model. <br>
+The input data is the stock price of 2330(TSMC), 2412(Chunghwa Telecom Co.) etc.
 ### 2330_LSTM.py
 The input data is the stock price of 2330(TSMC). <br>
 It can predict the 10th day's stock price with knowing the 1st~9th day's stock price. <br>
