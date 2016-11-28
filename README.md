@@ -29,7 +29,7 @@ Files in folder "stock" is for the implementation the various model. <br>
 The input data is the stock price of 2330(TSMC), 2412(Chunghwa Telecom Co.) etc.
 #### 2330_LSTM.py
 The input data is the stock price of 2330(TSMC). <br>
-It can predict the 10th day's stock price with knowing the 1st~9th day's stock price. <br>
+It can predict the 10th day's stock price (rise/fall) with knowing the 1st~9th day's stock price. <br>
 This file is training and testing with LSTM(RNN) model.
 <br>
 <br>
